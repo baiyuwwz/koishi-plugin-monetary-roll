@@ -162,7 +162,6 @@ export function apply(ctx: Context) {
       await ctx.database.set('monetary', { uid, currency }, { value: finalBalance })
       
       // 获取用户名或 userId
-      const mention = session.username ? `@${session.username}` : `@${session.userId}`
-      return `你消耗了${cost}${currency}，抽中了【${rewardConfig.name}】，获得了${reward}${currency}奖励！当前余额：${finalBalance}${currency} ${mention}。今日抽奖次数：${rollRecord.count}/${dailyLimit || '∞'}`
+      return `你消耗了${cost}${currency}，抽中了【${rewardConfig.name}】，获得了${reward}${currency}奖励！当前余额：${finalBalance}${currency} 。今日抽奖次数：${rollRecord.count}/${dailyLimit || '∞'}`
     })
 }
