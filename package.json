@@ -1,0 +1,42 @@
+{
+  "name": "koishi-plugin-monetary-roll",
+  "description": "a plugin for monetary to roll",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "koishi": {
+    "description": {
+      "en": "a plugin for monetary to roll",
+      "zh": "基于monetary的抽奖插件"
+    },
+    "service": {
+      "required": [
+        "database",
+        "monetary"
+      ]
+    }
+  },
+  "contributors": [
+    "baiyu <baiyu_wwz@qq.com>"
+  ],
+  "license": "MIT",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiyu-wwz/koishi-plugin-monetary-roll.git"
+  },
+  "keywords": [
+    "roll",
+    "koishi",
+    "plugin",
+    "抽奖"
+  ],
+  "devDependencies": {},
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  }
+}
